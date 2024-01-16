@@ -2,8 +2,9 @@ const extendHex = (shortHex) => {
   // write your code here
 	let new hex = "#";
     for (let index = 1; index < 4; index++) {
-    	hex=shortHex[i]+shortHex[i];
+    	var hex=shortHex[i]+shortHex[i];
     }
+	return hex;
 };
 
 // Do not change the code below.
