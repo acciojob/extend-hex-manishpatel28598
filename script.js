@@ -1,10 +1,28 @@
 const extendHex = (shortHex) => {
   // write your code here
-	let new hex = "#";
-    for (let index = 1; index < 4; index++) {
-    	var hex=shortHex[i]+shortHex[i];
-    }
-	return hex;
+	let new hexCode = ["#"];
+	iscapital = false;
+
+	shortHex = shortHex.replace("#", "");
+	for(let i=0; i<shortHex.lenght; i++){
+		if(
+			shortHex.charAt(i) === shortHex.charAt(i).toUpperCase()&&
+			shortHex.charAt(i) !== shortHex.charAt(i).toLowercase()
+		){
+			isCapital = true;
+		    break;
+	}
+}
+    for (let index = 0; index < shortHex.length; index++) {
+		if(isCapital){
+			hexCode.push(shortHex.charAt(i).toUpperCase());
+			hexCode.push(shortHex.charAt(i).toUpperCase());
+		}else{
+			hexCode.push(shortHex.charAt(i));
+			hexCode.push(shortHex.charAt(i));
+		}
+	}
+    	return hexCode.join("");
 };
 
 // Do not change the code below.
